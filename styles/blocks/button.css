@@ -31,7 +31,7 @@
 }
 
 .button--more {
-  width: 114px;
+  min-width: 114px;
   background-color: transparent;
   color: #3057a2;
   border: 1px solid #3057a2;
