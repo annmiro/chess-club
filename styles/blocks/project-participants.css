@@ -1,44 +1,44 @@
 .project-participants {
-    padding: 48px 20px 72px;
+  padding: 48px 20px 72px;
 }
 
 .project-participants__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 .project-participants__item {
-    position: relative;
+  position: relative;
 }
 
 .project-participants__profile-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-participants__avatar {
-    width: 244px;
-    height: 244px;
-    border-radius: 50%;
-    background-image: url(/images/chess-player-profile-image.png);
-    background-color: #cbbfae;
-    overflow: hidden;
-    margin-bottom: 28px;
+  width: 244px;
+  height: 244px;
+  border-radius: 50%;
+  background-image: url(/images/chess-player-profile-image.png);
+  background-color: #cbbfae;
+  overflow: hidden;
+  margin-bottom: 28px;
 }
 
 .project-participants__name {
-    margin: 0 0 8px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .project-participants__description {
-    margin: 0 0 20px;
-    opacity: 0.6;
+  margin: 0 0 20px;
+  opacity: 0.6;
 }

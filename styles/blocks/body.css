@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
-ul, ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 .body {

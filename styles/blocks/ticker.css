@@ -1,64 +1,64 @@
 .ticker {
-    display: flex;
-    align-items: center;
-    background: #F54932;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #f54932;
+  overflow: hidden;
 }
 
 .ticker__item {
-    position: relative;
-    font-size: 16px;
-    font-family: Merriweather, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 10px 0;
-    line-height: 1.1;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    white-space: nowrap;
-    animation: 14s linear infinite running line;
+  position: relative;
+  font-size: 16px;
+  font-family: Merriweather, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+  animation: 14s linear infinite running line;
 }
 
 .ticker__item::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -20px;
-    transform: translate(-50%, -50%);
-    width: 6px;
-    height: 6px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .ticker__items-wrap {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 30px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 30px;
 }
 
 .ticker__items-marquee {
-    flex-shrink: 0;
-    display: flex;
-    gap: 30px;
-    animation: scroll 20s linear infinite;
-    counter-reset: item;
-    justify-content: space-around;
-    min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  gap: 30px;
+  animation: scroll 20s linear infinite;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
 }
 
 .ticker__items-wrap:hover .ticker__items-marquee {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(calc(-100% - 20px));
-    }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
 }
