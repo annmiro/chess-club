@@ -1,0 +1,30 @@
+.pagination__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__list {
+    display: flex;
+    padding: 0 16px;
+    gap: 6px;
+}
+
+.pagination__item {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.pagination-item--current {
+    background-color: #313131;
+}
+
+.pagination__page-info {
+    padding: 0 16px;
+}
+
+.pagination__pages-amount {
+    opacity: 0.6;
+}

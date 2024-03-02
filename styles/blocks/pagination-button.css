@@ -1,0 +1,18 @@
+.pagination-button {
+    display: flex;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-size: 10px;
+    background-color: #313131;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    cursor: pointer;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='20' viewBox='0 0 12 20' fill='none'%3E%3Cpath d='M1.4618 1.5384L9.92334 9.99994L1.4618 18.4615' stroke='white' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E");
+}
+
+.pagination-button--previous {
+    transform: rotate(180deg);
+}

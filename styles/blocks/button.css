@@ -1,0 +1,39 @@
+.button {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    white-space: nowrap;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 66px;
+}
+
+.button--secondary {
+    min-width: 335px;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.button--third {
+    min-width: 335px;
+    background-color: #ffffff;
+    color: #1F1F1F;
+    padding: 15px;
+    opacity: 0.9;
+}
+
+.button--more {
+    width: 114px;
+    background-color: transparent;
+    color: #3057A2;
+    border: 1px solid #3057A2;
+    padding: 12px;
+}

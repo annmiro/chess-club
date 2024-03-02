@@ -1,0 +1,73 @@
+.project-business-plan {
+    overflow: hidden;
+    padding: 48px 20px 72px;
+}
+
+.project-business-plan__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 148px;
+}
+
+.project-business-plan__title {
+    margin: 0;
+}
+
+.project-business-plan__list {
+    display: grid;
+    margin-bottom: 28px;
+}
+
+.project-business-plan__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(/images/background-business-plan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-business-plan__item.project-business-plan__item--single {
+    min-height: 300px;
+    padding-top: 62px;
+    padding-bottom: 34px;
+}
+
+.project-business-plan__item.project-business-plan__item--double:first-child {
+    min-height: 150px;
+    padding-top: 62px;
+    padding-bottom: 28px;
+}
+
+.project-business-plan__item.project-business-plan__item--double:last-child {
+    min-height: 150px;
+    padding-bottom: 34px;
+}
+
+.project-business-plan__card {
+    display: flex;
+}
+
+.project-business-plan__card-text {
+    display: flex;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.project-business-plan__card-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #313131;
+    flex-shrink: 0;
+    margin-right: 16px;
+    font-weight: 600;
+
+}
