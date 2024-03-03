@@ -1,51 +1,51 @@
 .project-info {
-    padding: 48px 20px 72px;
+  padding: 48px 20px 72px;
 }
 
 .project-info__text {
-    margin: 0 0 21px;
-    text-transform: uppercase;
-    font-family: Merriweather, Helvetica, Arial, sans-serif;
-    line-height: 1.35;
-    font-size: 28px;
+  margin: 0 0 21px;
+  text-transform: uppercase;
+  font-family: Merriweather, Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+  font-size: 28px;
 }
 
 .project-info__text-accent {
-    color: #f54932;
-    font-weight: 700;
+  color: #f54932;
+  font-weight: 700;
 }
 
 .project-info__image-wrapper {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .project-info__block-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-info__table-row:not(:last-child)::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #D0D0D0;
-    margin: 10px 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d0d0d0;
+  margin: 10px 0;
 }
 
 .project-info__table-cell-title {
-    display: inline-block;
-    padding: 6px 0;
-    font-size: 20px;
-    opacity: 0.7;
+  display: inline-block;
+  padding: 6px 0;
+  font-size: 20px;
+  opacity: 0.7;
 }
 
 .project-info__table-cell-description {
-    display: inline-block;
-    padding: 6px 0;
-    font-weight: 600;
+  display: inline-block;
+  padding: 6px 0;
+  font-weight: 600;
 }
 
 .project-info__table {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
