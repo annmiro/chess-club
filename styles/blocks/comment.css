@@ -1,4 +1,14 @@
 .comment {
+  font-size: 18px;
+  line-height: 1.2;
   color: #3057a2;
   margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1366px) {
+  .comment {
+    font-size: 20px;
+  }
 }

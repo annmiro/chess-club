@@ -5,3 +5,9 @@
   text-transform: uppercase;
   font-weight: 400;
 }
+
+@media (min-width: 1366px) {
+  .title-large {
+    font-size: 60px;
+  }
+}
