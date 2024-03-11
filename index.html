@@ -287,79 +287,36 @@
         <h2 class="project-participants__title title-large">
           Участники турнира
         </h2>
-        <ul class="project-participants__list">
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Хозе-Рауль Капабланка</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="#" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Эммануил Ласкер</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Александр Алехин</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Арон Нимцович</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Рихард Рети</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Остап Бендер</h4>
-              <p class="project-participants__description">Гроссмейстер</p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-        </ul>
+        <div class="project-participants_list-wrapper">
+          <ul class="project-participants__list"></ul>
+          <template id="participant-template">
+            <li class="project-participants__item">
+              <article class="project-participants__profile-card">
+                <div class="project-participants__avatar"></div>
+                <h4 class="project-participants__name">
+                  Хозе-Рауль Капабланка
+                </h4>
+                <p class="project-participants__description">
+                  Чемпион мира по шахматам
+                </p>
+                <a href="#" class="button button--more">Подробнее</a>
+              </article>
+            </li>
+          </template>
+        </div>
         <div div class="pagination">
           <div class="pagination__container">
             <button
               type="button"
-              class="pagination-button pagination-button--previous"
+              class="pagination-button pagination-button--previous project-participants__previous-button-js"
             ></button>
             <span class="pagination__page-info"
-              ><span pagination__current-page-info>1</span
+              ><span class="pagination__current-page-js">1</span
               ><span class="pagination__pages-amount">/6</span></span
             >
             <button
               type="button"
-              class="pagination-button pagination-button--next"
+              class="pagination-button pagination-button--next project-participants__next-button-js"
             ></button>
           </div>
         </div>
@@ -398,5 +355,6 @@
         романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
       </p>
     </footer>
+    <script src="/scripts/participants.js"></script>
   </body>
 </html>
