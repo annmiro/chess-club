@@ -16,3 +16,24 @@
 .pagination-button--previous {
   transform: rotate(180deg);
 }
+
+@media (min-width: 1366px) {
+  .pagination-button {
+    width: 44px;
+    height: 44px;
+    background-size: 12px;
+    background-position: 18px 12px;
+  }
+
+  .pagination-button:hover {
+    background-color: #fbce51;
+  }
+
+  .pagination-button:focus {
+    border: 1px solid white;
+  }
+
+  .pagination-button:disabled {
+    background-color: #d6d6d6;
+  }
+}

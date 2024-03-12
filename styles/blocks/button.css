@@ -34,7 +34,7 @@
   background-color: transparent;
   color: #3057a2;
   border: 1px solid #3057a2;
-  padding: 12px;
+  padding: 10px;
 }
 
 @media (min-width: 1366px) {
@@ -53,5 +53,40 @@
     padding: 0 49px;
     min-height: 72px;
     border: 1px solid #1f1f1f;
+  }
+
+  .button--more {
+    min-width: 114px;
+  }
+
+  .button--secondary:hover {
+    background-color: #fbce51;
+    color: #1f1f1f;
+  }
+
+  .button--secondary:focus {
+    border: 2px solid white;
+    opacity: 0.3;
+  }
+
+  .button--third:hover {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .button--third:focus {
+    border: 2px solid white;
+    opacity: 0.3;
+  }
+
+  .button--more:hover {
+    background-color: #3057a2;
+    color: #ffffff;
+  }
+
+  .button--more:focus {
+    border: 3px solid white;
+    opacity: 0.3;
   }
 }

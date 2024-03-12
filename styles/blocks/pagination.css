@@ -23,6 +23,7 @@
 
 .pagination__page-info {
   padding: 0 16px;
+  max-width: 63px;
 }
 
 .pagination__pages-amount {

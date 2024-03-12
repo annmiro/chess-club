@@ -118,14 +118,14 @@
     width: 401px;
     height: 235px;
     background-image: url(/images/desktop-airplane.png);
-    top: 130px;
-    right: -56px;
+    top: 171px;
+    right: -59px;
   }
 
   .project-business-plan__item,
   .project-business-plan__item.project-business-plan__item--double:first-child {
     min-height: unset;
-    padding: 20px;
+    padding: 21px;
   }
 
   .project-business-plan__list .project-business-plan__item:nth-child(3) {
