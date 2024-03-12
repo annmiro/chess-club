@@ -22,8 +22,13 @@
 }
 
 .pagination__page-info {
-  padding: 0 16px;
-  max-width: 63px;
+  padding: 0 8px;
+  min-width: 57px;
+  margin: 0 5px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  letter-spacing: 1.5px;
 }
 
 .pagination__pages-amount {
