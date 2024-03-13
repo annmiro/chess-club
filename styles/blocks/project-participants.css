@@ -16,7 +16,7 @@
 .project-participants__list {
   position: relative;
   display: flex;
-  height: 390px;
+  height: 395px;
 }
 
 .project-participants__item {
@@ -25,16 +25,21 @@
   flex-shrink: 0;
   padding: 0 20px;
   top: 0;
-  left: 0;
   transition: all 0.5s ease-in-out;
+}
+
+.project-participants__item.current-1 {
+  left: 0;
 }
 
 .project-participants__item.previous {
   transform: translateX(-100%);
+  left: 0;
 }
 
 .project-participants__item.next {
   transform: translateX(100%);
+  right: 0;
 }
 
 .project-participants__profile-card {
@@ -69,5 +74,13 @@
 @media (min-width: 1366px) {
   .project-participants {
     padding: 106px 72px 94px;
+  }
+
+  .project-participants__item.current-2 {
+    left: calc(100% / 3);
+  }
+
+  .project-participants__item.current-3 {
+    left: calc((100% / 3) * 2);
   }
 }
