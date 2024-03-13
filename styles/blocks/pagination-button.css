@@ -16,3 +16,10 @@
 .pagination-button--previous {
   transform: rotate(180deg);
 }
+
+@media (min-width: 1366px) {
+  .pagination-button {
+    width: 44px;
+    height: 44px;
+  }
+}

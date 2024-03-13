@@ -125,7 +125,7 @@
   .project-business-plan__item,
   .project-business-plan__item.project-business-plan__item--double:first-child {
     min-height: unset;
-    padding: 20px;
+    padding: 21px;
   }
 
   .project-business-plan__list .project-business-plan__item:nth-child(3) {

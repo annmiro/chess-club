@@ -73,7 +73,12 @@
 
 @media (min-width: 1366px) {
   .project-participants {
-    padding: 106px 72px 94px;
+    position: relative;
+    padding: 106px 72px 140px;
+  }
+
+  .project-participants_list-wrapper {
+    margin-bottom: 0;
   }
 
   .project-participants__item.current-2 {

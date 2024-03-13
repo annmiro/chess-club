@@ -30,6 +30,14 @@
 }
 
 @media (min-width: 1366px) {
+  .pagination {
+    position: absolute;
+    content: "";
+    top: 106px;
+    right: 72px;
+    transform: translateY(8px);
+    width: 151px;
+  }
   .pagination__container--business-plan {
     display: none;
   }

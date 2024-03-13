@@ -60,3 +60,10 @@
     transform: translateX(calc(-100% - 20px));
   }
 }
+
+@media (min-width: 1366px) {
+  .ticker__item {
+    font-size: 22px;
+    padding: 18px 0;
+  }
+}

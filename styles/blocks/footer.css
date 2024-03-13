@@ -1,6 +1,7 @@
 .footer {
   background-color: #e9ded4;
   padding: 40px 20px;
+  min-height: 214px;
 }
 
 .footer__text {
@@ -8,4 +9,11 @@
   opacity: 0.6;
   line-height: 1.1;
   margin: 0;
+}
+
+@media (min-width: 1366px) {
+  .footer {
+    padding: 40px 72px;
+    min-height: 150px;
+  }
 }
