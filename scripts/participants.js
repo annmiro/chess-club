@@ -100,6 +100,52 @@
 
     addElement(participantsList[currentParticipantIndex], `next`);
 
+    const moveToNextParticipant = () => {
+        currentParticipantIndex = currentParticipantIndex + 1;
+
+        if (currentParticipantIndex > participantsList.length - 1) {
+            currentParticipantIndex = 0;
+        }
+
+        setCurrentPage();
+
+        const previous = document.querySelector(`.project-participants__item.previous`);
+        const currentFirst = document.querySelector(`.project-participants__item.current-1`);
+        const next = document.querySelector(`.project-participants__item.next`);
+        const cardNext = next.querySelector(`.project-participants__profile-card`);
+
+        if (window.innerWidth < desktopWidth) {
+            cardNext.children[1].textContent = participantsList[getPrevIndex(currentParticipantIndex)].name;
+            cardNext.children[2].textContent = participantsList[getPrevIndex(currentParticipantIndex)].title;
+
+
+            addElement(participantsList[getPrevIndex(currentParticipantIndex)], `next`);
+            next.classList.remove(`next`);
+            next.classList.add(`current-1`);
+            currentFirst.classList.remove(`current-1`);
+            currentFirst.classList.add(`previous`);
+            participantNodeList.removeChild(previous);
+        } else {
+            const currentSecond = document.querySelector(`.project-participants__item.current-2`);
+            const currentThird = document.querySelector(`.project-participants__item.current-3`);
+
+            cardNext.children[1].textContent = participantsList[getPrevIndex(currentParticipantIndex + 2)].name;
+            cardNext.children[2].textContent = participantsList[getPrevIndex(currentParticipantIndex + 2)].title;
+
+            addElement(participantsList[getPrevIndex(currentParticipantIndex + 2)], `next`);
+
+            next.classList.remove(`next`);
+            next.classList.add(`current-3`);
+            currentThird.classList.remove(`current-3`);
+            currentThird.classList.add(`current-2`);
+            currentSecond.classList.remove(`current-2`);
+            currentSecond.classList.add(`current-1`);
+            currentFirst.classList.remove(`current-1`);
+            currentFirst.classList.add(`previous`);
+            participantNodeList.removeChild(previous);
+        }
+    }
+
     previousButton.addEventListener(`click`, () => {
         currentParticipantIndex = currentParticipantIndex - 1;
 
@@ -156,50 +202,11 @@
     })
 
     nextButton.addEventListener(`click`, () => {
-        currentParticipantIndex = currentParticipantIndex + 1;
-
-        if (currentParticipantIndex > participantsList.length - 1) {
-            currentParticipantIndex = 0;
-        }
-
-        setCurrentPage();
-
-        const previous = document.querySelector(`.project-participants__item.previous`);
-        const currentFirst = document.querySelector(`.project-participants__item.current-1`);
-        const next = document.querySelector(`.project-participants__item.next`);
-        const cardNext = next.querySelector(`.project-participants__profile-card`);
-
-        if (window.innerWidth < desktopWidth) {
-            cardNext.children[1].textContent = participantsList[getPrevIndex(currentParticipantIndex)].name;
-            cardNext.children[2].textContent = participantsList[getPrevIndex(currentParticipantIndex)].title;
-
-
-            addElement(participantsList[getPrevIndex(currentParticipantIndex)], `next`);
-            next.classList.remove(`next`);
-            next.classList.add(`current-1`);
-            currentFirst.classList.remove(`current-1`);
-            currentFirst.classList.add(`previous`);
-            participantNodeList.removeChild(previous);
-        } else {
-            const currentSecond = document.querySelector(`.project-participants__item.current-2`);
-            const currentThird = document.querySelector(`.project-participants__item.current-3`);
-
-            cardNext.children[1].textContent = participantsList[getPrevIndex(currentParticipantIndex + 2)].name;
-            cardNext.children[2].textContent = participantsList[getPrevIndex(currentParticipantIndex + 2)].title;
-
-            addElement(participantsList[getPrevIndex(currentParticipantIndex + 2)], `next`);
-
-            next.classList.remove(`next`);
-            next.classList.add(`current-3`);
-            currentThird.classList.remove(`current-3`);
-            currentThird.classList.add(`current-2`);
-            currentSecond.classList.remove(`current-2`);
-            currentSecond.classList.add(`current-1`);
-            currentFirst.classList.remove(`current-1`);
-            currentFirst.classList.add(`previous`);
-            participantNodeList.removeChild(previous);
-        }
-
+        moveToNextParticipant();
     })
+
+    setInterval(() => {
+        moveToNextParticipant();
+    }, 4000);
 
 })();
