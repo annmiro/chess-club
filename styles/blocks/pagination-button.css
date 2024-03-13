@@ -21,5 +21,7 @@
   .pagination-button {
     width: 44px;
     height: 44px;
+    background-size: 12px;
+    background-position: 18px 12px;
   }
 }
