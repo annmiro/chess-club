@@ -38,6 +38,7 @@
     transform: translateY(8px);
     width: 151px;
   }
+
   .pagination__container--business-plan {
     display: none;
   }
