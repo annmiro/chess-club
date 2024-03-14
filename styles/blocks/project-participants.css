@@ -1,25 +1,50 @@
 .project-participants {
-  padding: 48px 20px 72px;
+  padding: 48px 0 72px;
 }
 
 .project-participants__title {
   margin: 0 0 40px;
+  padding: 0 20px;
+}
+
+.project-participants_list-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .project-participants__list {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
+  height: 395px;
 }
 
 .project-participants__item {
-  position: relative;
+  position: absolute;
+  width: 100vw;
+  flex-shrink: 0;
+  padding: 0 20px;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-participants__item.current-1 {
+  left: 0;
+}
+
+.project-participants__item.previous {
+  transform: translateX(-100%);
+  left: 0;
+}
+
+.project-participants__item.next {
+  transform: translateX(100%);
+  right: 0;
 }
 
 .project-participants__profile-card {
   display: flex;
+  min-height: 394px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,8 +54,9 @@
   width: 244px;
   height: 244px;
   border-radius: 50%;
-  background-image: url(/images/chess-player-profile-image.png);
+  background-image: url("/images/mobile-chess-player-profile-image.png");
   background-color: #cbbfae;
+  background-repeat: no-repeat;
   overflow: hidden;
   margin-bottom: 28px;
 }
@@ -45,4 +71,37 @@
 .project-participants__description {
   margin: 0 0 20px;
   opacity: 0.6;
+}
+
+@media (min-width: 1366px) {
+  .project-participants {
+    position: relative;
+    padding: 106px 72px 140px;
+  }
+
+  .project-participants_list-wrapper {
+    margin-bottom: 0;
+  }
+
+  .project-participants__list {
+    height: 462px;
+  }
+
+  .project-participants__item.current-2 {
+    left: calc(100% / 3);
+  }
+
+  .project-participants__item.current-3 {
+    left: calc((100% / 3) * 2);
+  }
+
+  .project-participants__avatar {
+    width: 320px;
+    height: 320px;
+    background-image: url("/images/desktop-chess-player-profile-image.png");
+  }
+
+  .project-participants__name {
+    margin-bottom: 6px;
+  }
 }

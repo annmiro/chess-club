@@ -1,8 +1,6 @@
 .ticker {
   display: flex;
-  align-items: center;
   background: #f54932;
-  overflow: hidden;
 }
 
 .ticker__item {
@@ -60,5 +58,12 @@
 
   to {
     transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@media (min-width: 1366px) {
+  .ticker__item {
+    font-size: 22px;
+    padding: 18px 0;
   }
 }

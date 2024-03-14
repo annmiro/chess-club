@@ -1,6 +1,7 @@
 .button {
   display: flex;
   max-width: 100%;
+  min-width: 335px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -16,14 +17,12 @@
 }
 
 .button--secondary {
-  min-width: 335px;
   background-color: #1f1f1f;
   color: #ffffff;
   padding: 15px;
 }
 
 .button--third {
-  min-width: 335px;
   background-color: #ffffff;
   color: #1f1f1f;
   padding: 15px;
@@ -35,5 +34,28 @@
   background-color: transparent;
   color: #3057a2;
   border: 1px solid #3057a2;
-  padding: 12px;
+  padding: 10px;
+}
+
+@media (min-width: 1366px) {
+  .button {
+    min-width: 263px;
+    white-space: unset;
+  }
+
+  .button--secondary {
+    padding: 0 49px;
+    min-height: 72px;
+  }
+
+  .button--third {
+    background-color: transparent;
+    padding: 0 49px;
+    min-height: 72px;
+    border: 1px solid #1f1f1f;
+  }
+
+  .button--more {
+    min-width: 114px;
+  }
 }

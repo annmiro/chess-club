@@ -13,16 +13,16 @@
       <section class="hero">
         <div class="hero__header">
           <div class="hero__header-logo">
-            <svg class="hero__header-logo-image" width="23" height="32">
+            <svg class="hero__header-logo-image" width="19" height="27">
               <use xlink:href="images/logo-sprite.svg#logo-knight" />
             </svg>
-            <svg class="hero__header-logo-image" width="23" height="32">
+            <svg class="hero__header-logo-image" width="19" height="27">
               <use xlink:href="images/logo-sprite.svg#logo-knight" />
             </svg>
-            <svg class="hero__header-logo-image" width="23" height="32">
+            <svg class="hero__header-logo-image" width="19" height="27">
               <use xlink:href="images/logo-sprite.svg#logo-knight" />
             </svg>
-            <svg class="hero__header-logo-image" width="23" height="32">
+            <svg class="hero__header-logo-image" width="19" height="27">
               <use xlink:href="images/logo-sprite.svg#logo-knight" />
             </svg>
           </div>
@@ -81,18 +81,22 @@
         <h2 class="visually-hidden">
           Информация о турнире: как поддержать проект
         </h2>
-        <div class="project-info__block-wrapper">
+        <div class="project-info__block-support-wrapper">
           <p class="project-info__text">
             Чтобы поддержать Международный васюкинский турнир
           </p>
-          <div class="project-info__image-wrapper">
-            <img
-              class="project-info__image"
-              src="images/mobile-chess-players.png"
-              width="335"
-              height="213"
-              alt="Напряженная игра 5 шахматистов за столом"
-            />
+          <div class="project-info__image-support-wrapper">
+            <picture>
+              <source
+                srcset="images/desktop-chess-players.jpg"
+                media="(min-width:1336px)"
+              />
+              <img
+                class="project-info__image"
+                src="images/mobile-chess-players.jpg"
+                alt="Напряженная игра 5 шахматистов за столом"
+              />
+            </picture>
           </div>
           <p class="project-info__text">
             посетите лекцию на тему:
@@ -104,76 +108,87 @@
 
         <div class="project-info__block-wrapper">
           <div class="project-info__image-wrapper">
-            <img
-              class="project-info__image"
-              src="images/mobile-chess-player.png"
-              width="335"
-              height="402"
-              alt="Шахматная фигура коня и кисть руки с пешкой в нижней части коллажа, играющий шахматист по центру, банкнота 1923 года эквивалентом в 10 тысяч рублей в верхнем правом углу"
-            />
+            <picture>
+              <source
+                srcset="images/desktop-chess-player-test.jpg"
+                media="(min-width:1336px)"
+              />
+              <img
+                class="project-info__image"
+                src="images/mobile-chess-player-test.jpg"
+                alt="Коллаж, состоящий из шахматиста за игрой,отдельных шахматных фигур крупным планом, банкноты 10 тысяч рублей 1923 года"
+              />
+            </picture>
           </div>
-          <p class="project-info__text">
-            и cеанс
-            <span class="project-info__text-accent"
-              >одновременной игры в шахматы на 160 досках</span
-            >
-            гроссмейстера О.Бендера
-          </p>
-          <ul id="chess-tournament-information" class="project-info__table">
-            <li class="project-info__table-row">
-              <span class="project-info__table-cell-title"
-                >Место проведения:</span
+          <div
+            id="chess-tournament-information"
+            class="project-info__content-container"
+          >
+            <p class="project-info__text">
+              и cеанс
+              <span class="project-info__text-accent"
+                >одновременной игры в шахматы на 160 досках</span
               >
-              <span class="project-info__table-cell-description"
-                >Клуб&nbsp;&laquo;Картонажник&raquo;</span
-              >
-            </li>
-            <li class="project-info__table-row">
-              <span class="project-info__table-cell-title"
-                >Дата и&nbsp;время мероприятия:</span
-              >
-              <span class="project-info__table-cell-description"
-                >22&nbsp;июня 1927&nbsp;г.&nbsp;в&nbsp;18:00</span
-              >
-            </li>
-            <li class="project-info__table-row">
-              <span class="project-info__table-cell-title"
-                >Плата за&nbsp;игру:</span
-              >
-              <span class="project-info__table-cell-description"
-                >20&nbsp;коп.</span
-              >
-            </li>
-            <li class="project-info__table-row">
-              <span class="project-info__table-cell-title"
-                >Стоимость входных билетов:</span
-              >
-              <span class="project-info__table-cell-description"
-                >50&nbsp;коп.</span
-              >
-            </li>
-            <li class="project-info__table-row">
-              <span class="project-info__table-cell-title"
-                >Взнос на&nbsp;телеграммы:</span
-              >
-              <span class="project-info__table-cell-description">
-                <span>100&nbsp;руб.</span>
-                <span>21&nbsp;руб.&nbsp;16&nbsp;коп.</span>
-              </span>
-            </li>
-          </ul>
-          <p class="comment">
+              гроссмейстера О.Бендера
+            </p>
+            <ul id="chess-tournament-information" class="project-info__table">
+              <li class="project-info__table-row">
+                <span class="project-info__table-cell-title"
+                  >Место проведения:</span
+                >
+                <span class="project-info__table-cell-description"
+                  >Клуб&nbsp;&laquo;Картонажник&raquo;</span
+                >
+              </li>
+              <li class="project-info__table-row">
+                <span class="project-info__table-cell-title"
+                  >Дата и&nbsp;время мероприятия:</span
+                >
+                <span class="project-info__table-cell-description"
+                  >22&nbsp;июня 1927&nbsp;г.&nbsp;в&nbsp;18:00</span
+                >
+              </li>
+              <li class="project-info__table-row">
+                <span class="project-info__table-cell-title"
+                  >Плата за&nbsp;игру:</span
+                >
+                <span class="project-info__table-cell-description"
+                  >20&nbsp;коп.</span
+                >
+              </li>
+              <li class="project-info__table-row">
+                <span class="project-info__table-cell-title"
+                  >Стоимость входных билетов:</span
+                >
+                <span class="project-info__table-cell-description"
+                  >50&nbsp;коп.</span
+                >
+              </li>
+              <li class="project-info__table-row">
+                <span class="project-info__table-cell-title"
+                  >Взнос на&nbsp;телеграммы:</span
+                >
+                <span class="project-info__table-cell-description">
+                  <span>100&nbsp;руб.</span>
+                  <span>21&nbsp;руб.&nbsp;16&nbsp;коп.</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="comment">
             По&nbsp;всем вопросам обращаться в&nbsp;администрацию
             к&nbsp;К.&nbsp;Михельсону
-          </p>
+          </a>
         </div>
       </section>
       <section class="project-business-plan">
         <div class="project-business-plan__title-wrapper">
-          <h2 class="project-business-plan__title title-large">
+          <h2 class="project-business-plan__title title-middle">
             Этапы преображения <span>Васюков</span>
           </h2>
-          <p class="comment">Будущие источники обогащения васюкинцев</p>
+          <a href="#" class="comment project-business-plan__comment"
+            >Будущие источники обогащения васюкинцев</a
+          >
         </div>
         <ul class="project-business-plan__list">
           <li
@@ -189,7 +204,7 @@
           <li
             class="project-business-plan__item project-business-plan__item--double"
           >
-            <article class="project-business-plan__card-text">
+            <article class="project-business-plan__card">
               <span class="project-business-plan__card-count">2</span>
               <p class="project-business-plan__card-text">
                 Открытие фешенебельной гостиницы «Проходная пешка» и других
@@ -197,37 +212,59 @@
               </p>
             </article>
           </li>
-          <!-- <li class="project-business-plan__item">
-                    <article>
-                        <span>3</span>
-                        <p>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов,
-                            икры, шоколадных конфет</p>
-                    </article>
-                </li>
-                <li class="project-business-plan__item">
-                    <article>
-                        <span>4</span>
-                        <p>Строительство дворца для турнира</p>
-                        <span>5</span>
-                        <p>Размещение гаражей для гостевого автотранспорта</p>
-                    </article>
-                </li>
-                <li class="project-business-plan__item">
-                    <article>
-                        <span>6</span>
-                        <p>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p>
-                    </article>
-                </li>
-                <li class="project-business-plan__item">
-                    <article>
-                        <span>7</span>
-                        <p>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей
-                            во все концы света, включая Лос-Анжелос и Мельбурн</p>
-                    </article>
-                </li> -->
+          <li class="project-business-plan__item">
+            <article class="project-business-plan__card">
+              <span class="project-business-plan__card-count">3</span>
+              <p class="project-business-plan__card-text">
+                Поднятие сельского хозяйства в радиусе на тысячу километров:
+                производство овощей, фруктов, икры, шоколадных конфет
+              </p>
+            </article>
+          </li>
+          <li
+            class="project-business-plan__item project-business-plan__item--double"
+          >
+            <article class="project-business-plan__card">
+              <span class="project-business-plan__card-count">4</span>
+              <p class="project-business-plan__card-text">
+                Строительство дворца для турнира
+              </p>
+            </article>
+          </li>
+          <li
+            class="project-business-plan__item project-business-plan__item--double"
+          >
+            <article class="project-business-plan__card">
+              <span class="project-business-plan__card-count">5</span>
+              <p class="project-business-plan__card-text">
+                Размещение гаражей для гостевого автотранспорта
+              </p>
+            </article>
+          </li>
+          <li class="project-business-plan__item">
+            <article class="project-business-plan__card">
+              <span class="project-business-plan__card-count">6</span>
+              <p class="project-business-plan__card-text">
+                Постройка сверхмощной радиостанции для передачи всему миру
+                сенсационных результатов
+              </p>
+            </article>
+          </li>
+          <li class="project-business-plan__item">
+            <article class="project-business-plan__card">
+              <span class="project-business-plan__card-count">7</span>
+              <p class="project-business-plan__card-text">
+                Создание аэропорта «Большие Васюки» с регулярным отправлением
+                почтовых самолётов и дирижаблей во все концы света, включая
+                Лос-Анжелос и Мельбурн
+              </p>
+            </article>
+          </li>
         </ul>
         <div class="pagination">
-          <div class="pagination__container">
+          <div
+            class="pagination__container pagination__container--business-plan"
+          >
             <button
               type="button"
               class="pagination-button pagination-button--previous"
@@ -247,82 +284,39 @@
         </div>
       </section>
       <section class="project-participants">
-        <h2 class="project-participants__title title-large">
+        <h2 class="project-participants__title title-middle">
           Участники турнира
         </h2>
-        <ul class="project-participants__list">
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Хозе-Рауль Капабланка</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="#" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Эммануил Ласкер</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Александр Алехин</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Арон Нимцович</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Рихард Рети</h4>
-              <p class="project-participants__description">
-                Чемпион мира по шахматам
-              </p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-          <li class="project-participants__item">
-            <article class="project-participants__profile-card">
-              <div class="project-participants__avatar"></div>
-              <h4 class="project-participants__name">Остап Бендер</h4>
-              <p class="project-participants__description">Гроссмейстер</p>
-              <a href="" class="button button--more">Подробнее</a>
-            </article>
-          </li>
-        </ul>
-        <div div class="pagination">
+        <div class="project-participants_list-wrapper">
+          <ul class="project-participants__list"></ul>
+          <template id="participant-template">
+            <li class="project-participants__item">
+              <article class="project-participants__profile-card">
+                <div class="project-participants__avatar"></div>
+                <h4 class="project-participants__name">
+                  Хозе-Рауль Капабланка
+                </h4>
+                <p class="project-participants__description">
+                  Чемпион мира по шахматам
+                </p>
+                <a href="#" class="button button--more">Подробнее</a>
+              </article>
+            </li>
+          </template>
+        </div>
+        <div class="pagination">
           <div class="pagination__container">
             <button
               type="button"
-              class="pagination-button pagination-button--previous"
+              class="pagination-button pagination-button--previous project-participants__previous-button-js"
             ></button>
             <span class="pagination__page-info"
-              ><span pagination__current-page-info>1</span
+              ><span class="pagination__current-page-js">1</span
               ><span class="pagination__pages-amount">/6</span></span
             >
             <button
               type="button"
-              class="pagination-button pagination-button--next"
+              class="pagination-button pagination-button--next project-participants__next-button-js"
             ></button>
           </div>
         </div>
@@ -361,5 +355,6 @@
         романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
       </p>
     </footer>
+    <script src="/scripts/participants.js"></script>
   </body>
 </html>

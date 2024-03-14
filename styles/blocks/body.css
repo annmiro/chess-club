@@ -1,24 +1,25 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .body {
-    font-family: 'Golos Text', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #313131;
-    font-style: normal;
-    min-width: 375px;
-    margin: 0;
-    line-height: 1;
+  font-family: "Golos Text", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #313131;
+  font-style: normal;
+  min-width: 375px;
+  max-width: 1366px;
+  margin: 0 auto;
+  line-height: 1;
 }

@@ -1,7 +1,18 @@
-.title-large {
+.title-large,
+.title-middle {
   font-family: Merriweather, Helvetica, Arial, sans-serif;
   font-size: 36px;
   line-height: 1.1;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+@media (min-width: 1366px) {
+  .title-middle {
+    font-size: 54px;
+  }
+
+  .title-large {
+    font-size: 60px;
+  }
 }
