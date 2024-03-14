@@ -26,7 +26,7 @@
   position: absolute;
   width: 335px;
   height: 182px;
-  background-image: url(/images/mobile-airplane.png);
+  background-image: url("/images/mobile-airplane.png");
   background-repeat: no-repeat;
   top: -128px;
 }
@@ -36,25 +36,25 @@
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url(/images/background-business-plan.jpg);
+  background-image: url("/images/background-business-plan.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.project-business-plan__item.project-business-plan__item--single {
+.project-business-plan__item--single {
   min-height: 300px;
   padding-top: 62px;
   padding-bottom: 34px;
 }
 
-.project-business-plan__item.project-business-plan__item--double:first-child {
+.project-business-plan__item--double:first-child {
   min-height: 150px;
   padding-top: 62px;
   padding-bottom: 28px;
 }
 
-.project-business-plan__item.project-business-plan__item--double:last-child {
+.project-business-plan__item--double:last-child {
   min-height: 150px;
   padding-bottom: 34px;
 }
@@ -117,13 +117,13 @@
   .project-business-plan__list::before {
     width: 401px;
     height: 235px;
-    background-image: url(/images/desktop-airplane.png);
+    background-image: url("/images/desktop-airplane.png");
     top: 171px;
     right: -59px;
   }
 
   .project-business-plan__item,
-  .project-business-plan__item.project-business-plan__item--double:first-child {
+  .project-business-plan__item--double:first-child {
     min-height: unset;
     padding: 21px;
   }
