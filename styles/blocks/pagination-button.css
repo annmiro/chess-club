@@ -17,6 +17,14 @@
   transform: rotate(180deg);
 }
 
+.pagination-button:focus {
+  outline: 4px solid #fbce51;
+}
+
+.pagination-button:disabled {
+  background-color: #d6d6d6;
+}
+
 @media (min-width: 1366px) {
   .pagination-button {
     width: 44px;
@@ -27,13 +35,5 @@
 
   .pagination-button:hover {
     background-color: #fbce51;
-  }
-
-  .pagination-button:focus {
-    border: 1px solid white;
-  }
-
-  .pagination-button:disabled {
-    background-color: #d6d6d6;
   }
 }

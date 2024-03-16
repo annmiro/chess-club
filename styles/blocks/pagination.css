@@ -35,6 +35,11 @@
   opacity: 0.6;
 }
 
+.pagination__pages-current {
+  display: inline-block;
+  min-width: 12px;
+}
+
 @media (min-width: 1366px) {
   .pagination {
     position: absolute;

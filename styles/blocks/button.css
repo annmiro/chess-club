@@ -64,20 +64,10 @@
     color: #1f1f1f;
   }
 
-  .button--secondary:focus {
-    border: 2px solid white;
-    opacity: 0.3;
-  }
-
   .button--third:hover {
     background-color: #1f1f1f;
     color: #ffffff;
     opacity: 1;
-  }
-
-  .button--third:focus {
-    border: 2px solid white;
-    opacity: 0.3;
   }
 
   .button--more:hover {
@@ -85,8 +75,7 @@
     color: #ffffff;
   }
 
-  .button--more:focus {
-    border: 3px solid white;
-    opacity: 0.3;
+  .button:focus {
+    outline: 4px solid #fbce51;
   }
 }
