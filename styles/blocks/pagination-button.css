@@ -24,4 +24,16 @@
     background-size: 12px;
     background-position: 18px 12px;
   }
+
+  .pagination-button:hover {
+    background-color: #fbce51;
+  }
+
+  .pagination-button:focus {
+    border: 1px solid white;
+  }
+
+  .pagination-button:disabled {
+    background-color: #d6d6d6;
+  }
 }
