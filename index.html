@@ -190,95 +190,48 @@
             >Будущие источники обогащения васюкинцев</a
           >
         </div>
-        <ul class="project-business-plan__list">
-          <li
-            class="project-business-plan__item project-business-plan__item--double"
-          >
-            <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">1</span>
-              <p class="project-business-plan__card-text">
-                Строительство железнодорожной магистрали Москва-Васюки
-              </p>
-            </article>
-          </li>
-          <li
-            class="project-business-plan__item project-business-plan__item--double"
-          >
-            <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">2</span>
-              <p class="project-business-plan__card-text">
-                Открытие фешенебельной гостиницы «Проходная пешка» и других
-                небоскрёбов
-              </p>
-            </article>
-          </li>
+        <div class="project-business-plan__list-block"></div>
+
+        <template id="business-plan-slider">
+          <ol class="project-business-plan__slider-list"></ol>
+        </template>
+        <template id="business-plan-slide-item">
+          <li class="project-business-plan__slide"></li>
+        </template>
+
+        <template id="business-plan-list">
+          <ul class="project-business-plan__list"></ul>
+        </template>
+        <template id="business-plan-item">
           <li class="project-business-plan__item">
             <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">3</span>
-              <p class="project-business-plan__card-text">
-                Поднятие сельского хозяйства в радиусе на тысячу километров:
-                производство овощей, фруктов, икры, шоколадных конфет
-              </p>
+              <span class="project-business-plan__card-count"></span>
+              <p class="project-business-plan__card-text"></p>
             </article>
           </li>
-          <li
-            class="project-business-plan__item project-business-plan__item--double"
-          >
-            <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">4</span>
-              <p class="project-business-plan__card-text">
-                Строительство дворца для турнира
-              </p>
-            </article>
-          </li>
-          <li
-            class="project-business-plan__item project-business-plan__item--double"
-          >
-            <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">5</span>
-              <p class="project-business-plan__card-text">
-                Размещение гаражей для гостевого автотранспорта
-              </p>
-            </article>
-          </li>
-          <li class="project-business-plan__item">
-            <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">6</span>
-              <p class="project-business-plan__card-text">
-                Постройка сверхмощной радиостанции для передачи всему миру
-                сенсационных результатов
-              </p>
-            </article>
-          </li>
-          <li class="project-business-plan__item">
-            <article class="project-business-plan__card">
-              <span class="project-business-plan__card-count">7</span>
-              <p class="project-business-plan__card-text">
-                Создание аэропорта «Большие Васюки» с регулярным отправлением
-                почтовых самолётов и дирижаблей во все концы света, включая
-                Лос-Анжелос и Мельбурн
-              </p>
-            </article>
-          </li>
-        </ul>
+        </template>
+
         <div class="pagination">
           <div
             class="pagination__container pagination__container--business-plan"
           >
             <button
               type="button"
-              class="pagination-button pagination-button--previous"
+              class="pagination-button pagination-button--previous project-business-plan__previous-js"
             ></button>
-            <ol class="pagination__list">
-              <li class="pagination__item pagination-item--current"></li>
+            <ol class="pagination__list project-business-plan__bullets-js">
+              <!-- <li class="pagination__item pagination-item--current"></li>
               <li class="pagination__item"></li>
               <li class="pagination__item"></li>
               <li class="pagination__item"></li>
-              <li class="pagination__item"></li>
+              <li class="pagination__item"></li> -->
             </ol>
+            <template id="business-plan-bullet">
+              <li class="pagination__item"></li>
+            </template>
             <button
               type="button"
-              class="pagination-button pagination-button--next"
+              class="pagination-button project-business-plan__next-js"
             ></button>
           </div>
         </div>
@@ -355,6 +308,7 @@
         романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
       </p>
     </footer>
-    <script src="/scripts/participants.js"></script>
+    <script async src="/scripts/participants.js"></script>
+    <script async src="/scripts/business-plan.js"></script>
   </body>
 </html>
