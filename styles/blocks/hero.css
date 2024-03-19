@@ -12,6 +12,7 @@
   width: 100vw;
   min-height: 740px;
   z-index: 5;
+  mix-blend-mode: color-burn(100%);
 }
 
 .hero__image-block::before {
@@ -166,7 +167,6 @@
     bottom: -65px;
     right: -272px;
     background-size: 98%;
-    background-image: url("/images/background-hero-2.png");
   }
 
   .hero::after {
@@ -174,7 +174,6 @@
     position: absolute;
     width: 83px;
     height: 122px;
-    background-image: url("/images/background-hero-3.png");
     bottom: 20px;
     right: 45px;
     background-repeat: no-repeat;
@@ -193,10 +192,12 @@
   .hero__header-logo-text-wrapper {
     font-size: 17px;
   }
+
   .hero__header-logo-image {
     width: 22px;
     height: 31px;
   }
+
   .hero__content {
     max-width: 542px;
     display: flex;
