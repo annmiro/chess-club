@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a:focus {
+  outline: 4px solid #fbce51;
+}
+
 ul,
 ol {
   margin-top: 0;

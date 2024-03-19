@@ -4,12 +4,12 @@
   flex-direction: column;
   margin: 0;
   padding: 20px 20px 290px;
-  background-image: url("/images/mobile-full-bg.png");
   overflow: hidden;
   background-color: #e6dacf;
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: 56%;
+  mix-blend-mode: color-burn(100%);
 }
 
 .hero::before {
@@ -74,7 +74,6 @@
     bottom: -65px;
     right: -272px;
     background-size: 98%;
-    background-image: url("/images/background-hero-2.png");
   }
 
   .hero::after {
@@ -82,7 +81,6 @@
     position: absolute;
     width: 83px;
     height: 122px;
-    background-image: url("/images/background-hero-3.png");
     bottom: 20px;
     right: 45px;
     background-repeat: no-repeat;
@@ -101,10 +99,12 @@
   .hero__header-logo-text-wrapper {
     font-size: 17px;
   }
+
   .hero__header-logo-image {
     width: 22px;
     height: 31px;
   }
+
   .hero__content {
     max-width: 542px;
     display: flex;
