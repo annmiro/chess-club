@@ -229,7 +229,5 @@
                 setMobileSlider()
             }
         }
-
-        console.log(`currentSlideIndex`, currentSlideIndex)
     })
 })();
