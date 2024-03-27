@@ -67,9 +67,6 @@
   padding-right: 20px;
 }
 
-.project-business-plan__item:last-child {
-}
-
 .project-business-plan__item--single .project-business-plan__card {
   height: 300px;
   padding-top: 62px;
