@@ -63,9 +63,11 @@
 
 .project-business-plan__item {
   display: flex;
-  flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.project-business-plan__item:last-child {
 }
 
 .project-business-plan__item--single .project-business-plan__card {
@@ -73,10 +75,6 @@
   padding-top: 62px;
   padding-bottom: 34px;
 }
-
-/* .project-business-plan__item--double {
-  flex-grow: 1;
-} */
 
 .project-business-plan__item--double:first-child .project-business-plan__card {
   padding-top: 62px;
@@ -129,7 +127,7 @@
 
   .project-business-plan__title-wrapper {
     display: inline-block;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     max-width: 806px;
     padding: 0;
   }
@@ -152,15 +150,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
     column-gap: 18px;
-    row-gap: 17px;
+    row-gap: 18px;
   }
 
   .project-business-plan__list-block::before {
     width: 401px;
     height: 235px;
     background-image: url("/images/desktop-airplane.png");
-    top: 166px;
-    left: 884px;
+    top: 168px;
+    left: 883px;
   }
 
   .project-business-plan__item,

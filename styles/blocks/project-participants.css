@@ -73,7 +73,7 @@
 @media (min-width: 1366px) {
   .project-participants {
     position: relative;
-    padding: 80px 72px 142px;
+    padding: 80px 72px 134px;
   }
 
   .project-participants__title {
@@ -86,7 +86,7 @@
   }
 
   .project-participants__list {
-    height: 462px;
+    height: 468px;
   }
   .project-participants__item {
     padding: 0;
@@ -104,9 +104,13 @@
     width: 320px;
     height: 320px;
     background-image: url("/images/desktop-chess-player-profile-image.png");
+    margin-bottom: 29px;
   }
 
   .project-participants__name {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
+  }
+  .project-participants__description {
+    margin-bottom: 22px;
   }
 }

@@ -215,8 +215,8 @@
         moveToNextParticipant();
     })
 
-    setInterval(() => {
-        moveToNextParticipant();
-    }, 4000);
+    // setInterval(() => {
+    //     moveToNextParticipant();
+    // }, 4000);
 
 })();

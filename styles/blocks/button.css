@@ -41,6 +41,7 @@
   .button {
     min-width: 263px;
     white-space: unset;
+    line-height: 1.2;
   }
 
   .button--secondary {
@@ -57,6 +58,7 @@
 
   .button--more {
     min-width: 114px;
+    padding: 7px;
   }
 
   .button--secondary:hover {

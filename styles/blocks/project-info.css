@@ -28,6 +28,8 @@
 }
 
 .project-info__image-support-wrapper {
+  display: flex;
+  justify-content: center;
   margin-bottom: 22px;
 }
 
@@ -95,11 +97,11 @@
   }
 
   .project-info__image-support-wrapper {
-    width: 394px;
+    width: 100%;
     margin-bottom: 0;
     position: absolute;
     top: -26px;
-    right: -56%;
+    right: -634px;
   }
 
   .project-info__block-wrapper {
