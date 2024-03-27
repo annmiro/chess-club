@@ -9,6 +9,7 @@
 
     let currentParticipantIndex = 0;
     const desktopWidth = 1366;
+    const desktopCardWidth = 394;
 
     const participantsList = [
         {
@@ -43,7 +44,7 @@
         },
     ]
 
-    const getAdaptiveItemWidth = (width) => window.innerWidth >= desktopWidth ? width / 3 : width;
+    const getAdaptiveItemWidth = (width) => window.innerWidth >= desktopWidth ? desktopCardWidth : width;
     const getPrevIndex = (index) => index > participantsList.length - 1 ? index % participantsList.length : index;
 
 
@@ -71,6 +72,8 @@
             participantNodeList.insertBefore(clonedContent, participantNodeList.firstChild);
         }
     }
+
+    console.log(containerWidth);
 
     window.addEventListener(`resize`, () => {
         setCurrentPage();

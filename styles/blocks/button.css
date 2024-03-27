@@ -34,7 +34,7 @@
   background-color: transparent;
   color: #3057a2;
   border: 1px solid #3057a2;
-  padding: 10px;
+  padding: 8px;
 }
 
 @media (min-width: 1366px) {
@@ -51,7 +51,7 @@
   .button--third {
     background-color: transparent;
     padding: 0 49px;
-    min-height: 72px;
+    min-height: 71px;
     border: 1px solid #1f1f1f;
   }
 

@@ -22,9 +22,9 @@
 }
 
 .pagination__page-info {
-  padding: 0 8px;
-  min-width: 57px;
-  margin: 0 5px;
+  padding: 0px 6px;
+  min-width: 50px;
+  margin: 0 3px;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -44,13 +44,16 @@
   .pagination {
     position: absolute;
     content: "";
-    top: 106px;
-    right: 72px;
+    top: 79px;
+    right: 70px;
     transform: translateY(8px);
-    width: 151px;
+    width: 155px;
   }
 
   .pagination__container--business-plan {
     display: none;
+  }
+  .pagination__page-info {
+    margin: 0 7px;
   }
 }
