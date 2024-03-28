@@ -50,11 +50,12 @@
   width: 244px;
   height: 244px;
   border-radius: 50%;
-  background-image: url("/images/mobile-chess-player-profile-image.png");
+  background-image: url("/images/chess-player-profile-image.png");
   background-color: #cbbfae;
   background-repeat: no-repeat;
   overflow: hidden;
   margin-bottom: 31px;
+  background-size: contain;
 }
 
 .project-participants__name {
@@ -103,7 +104,7 @@
   .project-participants__avatar {
     width: 320px;
     height: 320px;
-    background-image: url("/images/desktop-chess-player-profile-image.png");
+    background-image: url("/images/chess-player-profile-image.png");
     margin-bottom: 29px;
   }
 

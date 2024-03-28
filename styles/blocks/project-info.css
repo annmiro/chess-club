@@ -30,13 +30,23 @@
 .project-info__image-support-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .project-info__image-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
+}
+
+.project-info__image-players {
+  width: 335px;
+  height: 212px;
+}
+
+.project-info__image-player {
+  width: 374px;
+  height: 420px;
 }
 
 .project-info__table {
@@ -114,7 +124,7 @@
     content: "";
     position: absolute;
     left: -28px;
-    bottom: -37px;
+    bottom: -15px;
     margin-bottom: 0;
   }
 

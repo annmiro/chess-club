@@ -30,13 +30,15 @@
 .project-business-plan__list-block::before {
   content: "";
   position: absolute;
-  width: 335px;
-  height: 182px;
-  background-image: url("/images/mobile-airplane.png");
+  width: 350px;
+  height: 197px;
+  background-image: url(/images/airplane.png);
   background-repeat: no-repeat;
-  top: -128px;
+  top: -132px;
   z-index: 1;
-  left: 19px;
+  left: 29px;
+  background-size: contain;
+  transform: rotate(-3deg);
 }
 
 .project-business-plan__slider-list {
