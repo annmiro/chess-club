@@ -155,9 +155,9 @@
   .project-business-plan__list-block::before {
     width: 401px;
     height: 235px;
-    background-image: url("/images/desktop-airplane.png");
     top: 168px;
     left: 883px;
+    transform: unset;
   }
 
   .project-business-plan__item,

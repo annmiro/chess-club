@@ -123,9 +123,19 @@
   .project-info__image-wrapper {
     content: "";
     position: absolute;
-    left: -28px;
-    bottom: -15px;
+    left: -27px;
+    bottom: -36px;
     margin-bottom: 0;
+  }
+
+  .project-info__image-players {
+    width: 394px;
+    height: 250px;
+  }
+
+  .project-info__image-player {
+    width: 528px;
+    height: 609px;
   }
 
   .project-info__content-container {
@@ -159,6 +169,7 @@
     padding-left: 5px;
     line-height: 1.25;
   }
+
   .project-info__table-row:not(:last-child)::after {
     content: "";
     display: block;
