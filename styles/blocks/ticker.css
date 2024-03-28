@@ -10,7 +10,7 @@
   font-weight: 400;
   margin: 0;
   padding: 10px 0;
-  line-height: 1.1;
+  line-height: 1.15;
   text-transform: uppercase;
   color: #ffffff;
   white-space: nowrap;
@@ -64,6 +64,6 @@
 @media (min-width: 1366px) {
   .ticker__item {
     font-size: 22px;
-    padding: 18px 0;
+    padding: 17px 0;
   }
 }

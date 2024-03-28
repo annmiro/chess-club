@@ -30,12 +30,15 @@
 .project-business-plan__list-block::before {
   content: "";
   position: absolute;
-  width: 335px;
-  height: 182px;
-  background-image: url("/images/mobile-airplane.png");
+  width: 350px;
+  height: 197px;
+  background-image: url(/images/airplane.png);
   background-repeat: no-repeat;
-  top: -128px;
+  top: -132px;
   z-index: 1;
+  left: 29px;
+  background-size: contain;
+  transform: rotate(-3deg);
 }
 
 .project-business-plan__slider-list {
@@ -62,7 +65,6 @@
 
 .project-business-plan__item {
   display: flex;
-  flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -73,17 +75,14 @@
   padding-bottom: 34px;
 }
 
-.project-business-plan__item--double {
-  height: 150px;
-}
-
-.project-business-plan__item--double:first-child .project-business-plan__card,
 .project-business-plan__item--double:first-child .project-business-plan__card {
   padding-top: 62px;
   padding-bottom: 28px;
 }
 
-.project-business-plan__item--double:last-child .project-business-plan__card,
+.project-business-plan__item--double:last-child {
+  flex-grow: 1;
+}
 .project-business-plan__item--double:last-child .project-business-plan__card {
   padding-bottom: 34px;
 }
@@ -127,35 +126,38 @@
 
   .project-business-plan__title-wrapper {
     display: inline-block;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     max-width: 806px;
+    padding: 0;
   }
 
   .project-business-plan__title {
     display: inline;
+    line-height: 1.2;
   }
 
   .project-business-plan__comment {
     position: relative;
     display: inline-block;
     max-width: 280px;
-    top: -3px;
+    top: -2px;
+    right: -7px;
   }
 
   .project-business-plan__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 18px;
+    row-gap: 18px;
   }
 
   .project-business-plan__list-block::before {
     width: 401px;
     height: 235px;
-    background-image: url("/images/desktop-airplane.png");
-    top: 171px;
-    right: -59px;
+    top: 168px;
+    left: 883px;
+    transform: unset;
   }
 
   .project-business-plan__item,

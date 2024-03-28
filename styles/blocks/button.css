@@ -34,13 +34,14 @@
   background-color: transparent;
   color: #3057a2;
   border: 1px solid #3057a2;
-  padding: 10px;
+  padding: 8px;
 }
 
 @media (min-width: 1366px) {
   .button {
     min-width: 263px;
     white-space: unset;
+    line-height: 1.2;
   }
 
   .button--secondary {
@@ -51,12 +52,13 @@
   .button--third {
     background-color: transparent;
     padding: 0 49px;
-    min-height: 72px;
+    min-height: 71px;
     border: 1px solid #1f1f1f;
   }
 
   .button--more {
     min-width: 114px;
+    padding: 7px;
   }
 
   .button--secondary:hover {
