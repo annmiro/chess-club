@@ -12,7 +12,7 @@
 }
 
 .hero__image-block::before {
-  background-image: url("/images/new-main-background.png");
+  background-image: url("/images/main-background.png");
   mix-blend-mode: color-burn;
   content: "";
   position: absolute;
@@ -45,7 +45,7 @@
   left: 50%;
   background-size: cover;
   transform: translate(-50%, -50%) rotate(82deg);
-  background-image: url("/images/new-circle-text.png");
+  background-image: url("/images/circle-text.png");
   mix-blend-mode: overlay;
 }
 
@@ -57,7 +57,7 @@
   background-size: contain;
   bottom: 108px;
   right: 251px;
-  background-image: url("/images/new-hero-chess-king.png");
+  background-image: url("/images/hero-chess-king.png");
 }
 
 .hero__chess-queen {
@@ -68,7 +68,7 @@
   background-size: contain;
   bottom: 136px;
   right: 87px;
-  background-image: url("/images/new-hero-chess-queen.png");
+  background-image: url("/images/hero-chess-queen.png");
   rotate: 8deg;
 }
 
@@ -80,7 +80,7 @@
   background-size: contain;
   bottom: -17px;
   right: -116px;
-  background-image: url("/images/new-city.png");
+  background-image: url("/images/city.png");
 }
 
 .hero__city-frame::before {
@@ -94,7 +94,7 @@
   top: 47%;
   left: 49%;
   transform: translate(-50%, -50%);
-  background-image: url("/images/new-city-frame.png");
+  background-image: url("/images/city-frame.png");
 }
 
 .hero__chess-knight {
@@ -107,7 +107,7 @@
   background-size: contain;
   bottom: -26px;
   right: 129px;
-  background-image: url("/images/new-chess-knight.png");
+  background-image: url("/images/chess-knight.png");
 }
 
 .hero__pawn {
@@ -232,7 +232,6 @@
     background-size: contain;
     top: 38.6%;
     right: -10.5%;
-    background-image: url("/images/new-city.png");
   }
 
   .hero__chess-knight {
@@ -254,7 +253,7 @@
     height: 122px;
     bottom: 19px;
     right: 44px;
-    background-image: url("/images/new-chess-figure-pawn.png");
+    background-image: url("/images/chess-figure-pawn.png");
   }
 
   .hero__header {
